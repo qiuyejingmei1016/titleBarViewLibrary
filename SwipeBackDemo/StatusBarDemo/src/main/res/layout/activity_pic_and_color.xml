@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_bar_view"
+        layout="@layout/title_bar_view"/>
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title_bar_view">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <SeekBar
+                android:padding="20dp"
+                android:id="@+id/seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_navigation_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="修改导航栏颜色"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/btn_status_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="修改状态栏颜色"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/btn_recover_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="恢复初始值"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

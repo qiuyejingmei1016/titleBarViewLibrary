@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bairuitech.anychat.titlebar.TitleBar
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            app:color_title="@color/title_bar_white_color"
+            app:color_left="@color/title_bar_white_color"
+            app:color_right="@color/title_bar_white_color"
+            android:background="@color/title_bar_red_color"/>
+</RelativeLayout>

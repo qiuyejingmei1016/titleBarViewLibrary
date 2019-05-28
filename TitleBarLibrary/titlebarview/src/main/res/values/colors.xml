@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_bar_transparent">#00000000</color>
+    <color name="title_bar_pressed_black">#0c000000</color>
+    <color name="title_bar_pressed_white">#66FFFFFF</color>
+</resources>

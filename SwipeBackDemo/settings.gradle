@@ -1,1 +1,1 @@
-include ':app', ':StatusBarDemo', ':demo'
+include ':app', ':StatusBarDemo', ':demo', ':takephoto'

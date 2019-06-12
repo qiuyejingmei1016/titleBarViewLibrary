@@ -11,16 +11,13 @@
         <TextView
                 android:id="@+id/title_text"
                 style="@style/title_bar_title_text"
-                android:textColor="#000000"
-                android:text="白色状态栏"/>
+                android:textColor="#000000"/>
         <ImageButton
                 android:id="@+id/title_left_img_btn"
-                style="@style/title_bar_left_img_btn"
-                android:src="@mipmap/ico_back"/>
+                style="@style/title_bar_left_img_btn"/>
         <ImageButton
                 android:id="@+id/title_right_img_btn"
-                style="@style/title_bar_right_img_btn"
-                android:src="@mipmap/ico_set"/>
+                style="@style/title_bar_right_img_btn"/>
     </RelativeLayout>
 
     <TextView

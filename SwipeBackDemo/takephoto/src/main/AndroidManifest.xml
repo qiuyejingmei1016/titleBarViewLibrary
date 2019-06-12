@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.demo">
+          package="com.yyh.takephoto">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
             android:allowBackup="true"
@@ -9,22 +12,19 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CommonLoadTitleActivity"/>
-        <activity android:name=".activity.HandleCommonLoadTitleActivity"/>
-        <activity android:name=".activity.HandleWhiteStatusBarActivity">
+        <activity
+                android:name=".SelectPhotoActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".activity.TitleViewAarActivity">
-        </activity>
-        <activity android:name=".activity.ToolBarTitleIncludeActivity">
-        </activity>
-        <activity android:name=".activity.CommonTitleIncludeActivity">
+        <activity android:name=".ResultActivity">
         </activity>
     </application>
 

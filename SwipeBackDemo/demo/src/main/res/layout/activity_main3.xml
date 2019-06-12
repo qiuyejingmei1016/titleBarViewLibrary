@@ -18,11 +18,11 @@
         <ImageButton
                 android:id="@+id/title_left_img_btn"
                 style="@style/title_bar_left_img_btn"
-                android:src="@mipmap/ico_back"/>
+                android:src="@mipmap/ico_back_white"/>
         <ImageButton
                 android:id="@+id/title_right_img_btn"
                 style="@style/title_bar_right_img_btn"
-                android:src="@mipmap/ico_set"/>
+                android:src="@mipmap/ico_set_black"/>
     </RelativeLayout>
 
     <TextView

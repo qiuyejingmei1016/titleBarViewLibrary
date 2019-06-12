@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <!--裁剪配置-->
+        <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="裁切配置："
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"/>
+
+            <!--是否裁剪-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是否裁切："/>
+
+                <RadioGroup
+                        android:id="@+id/rgCutCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <RadioButton
+                            android:id="@+id/rbCropYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="true"
+                            android:text="是"/>
+
+                    <RadioButton
+                            android:id="@+id/rbCropNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--裁剪工具-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="裁切工具："/>
+
+                <RadioGroup
+                        android:id="@+id/rgCropTool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <RadioButton
+                            android:id="@+id/rbCropByOther"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="true"
+                            android:text="第三方"/>
+
+                    <RadioButton
+                            android:id="@+id/rbCropOwn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TakePhoto自带"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--尺寸|比例-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="尺寸/比例："/>
+
+                <RadioGroup
+                        android:id="@+id/rgCropSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <RadioButton
+                            android:id="@+id/rbOutPut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="true"
+                            android:text="宽x高"/>
+
+                    <RadioButton
+                            android:id="@+id/rbAspect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="宽/高"/>
+                </RadioGroup>
+
+                <EditText
+                        android:id="@+id/etCropWidth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="number"
+                        android:minWidth="42dp"
+                        android:text="800"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x"/>
+
+                <EditText
+                        android:id="@+id/etCropHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="42dp"
+                        android:text="800"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择图片配置："
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="使用TakePhoto自带相册："/>
+
+                    <RadioGroup
+                            android:id="@+id/rgPickTool"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <RadioButton
+                                android:id="@+id/rbPickWithOwn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:checked="true"
+                                android:text="是"/>
+
+                        <RadioButton
+                                android:id="@+id/rbPickWithOther"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="否"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="提示：选择多张图片时会自动切换到TakePhoto自带相册"
+                        android:textColor="#FF0000"
+                        android:textSize="12sp"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="最多选择："/>
+
+                        <EditText
+                                android:id="@+id/etLimit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:minWidth="30dp"
+                                android:text="5"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="张"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="从哪选择："/>
+
+                        <RadioGroup
+                                android:id="@+id/rgSelectFrom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <RadioButton
+                                    android:id="@+id/rbGallery"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:checked="true"
+                                    android:text="从相册"/>
+
+                            <RadioButton
+                                    android:id="@+id/rbFile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="从文件"/>
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--拍照|选择-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btnPickByTake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="拍照"/>
+
+            <Button
+                    android:id="@+id/btnPickBySelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="选择照片"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

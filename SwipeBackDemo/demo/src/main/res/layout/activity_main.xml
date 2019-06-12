@@ -19,19 +19,88 @@
                 android:id="@+id/title_left_img_btn"
                 style="@style/title_bar_left_img_btn"
                 android:paddingLeft="0dp"
-                android:src="@mipmap/ico_back"/>
+                android:src="@mipmap/ico_back_white"/>
         <ImageButton
                 android:id="@+id/title_right_img_btn"
                 style="@style/title_bar_right_img_btn"
-                android:src="@mipmap/ico_set"/>
+                android:src="@mipmap/ico_set_black"/>
     </android.support.v7.widget.Toolbar>
 
-    <TextView
-            android:id="@+id/tip"
-            android:layout_centerInParent="true"
-            android:layout_width="wrap_content"
+    <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:text="Toolbar_title_view"/>
+            android:layout_below="@+id/title_bar_view"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:text="这里是Toolbar_title_view"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+        <Button
+                android:id="@+id/bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:text="加载普通titleView测试"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+        <Button
+                android:id="@+id/bt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="加载普通titleView测试问题解决"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+        <Button
+                android:id="@+id/bt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="ToolBarTitle布局include测试"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+        <Button
+                android:id="@+id/bt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="CommonTitle布局include测试"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+        <Button
+                android:id="@+id/bt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="自定义titleBarView aar测试"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+        <Button
+                android:id="@+id/bt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="解决白色状态栏问题"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+    </LinearLayout>
 </RelativeLayout>

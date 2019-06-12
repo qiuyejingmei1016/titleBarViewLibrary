@@ -5,14 +5,14 @@
         android:layout_height="match_parent"
         android:background="@color/title_bar_white_color">
 
-    <include android:id="@+id/title" layout="@layout/title_view"/>
+    <include layout="@layout/custom_title_view_aar"/>
 
     <TextView
             android:id="@+id/tip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="自定义TitleBar"
+            android:text="自定义titleBarView aar测试"
             android:textAllCaps="false"
             android:textSize="20sp"/>
 </RelativeLayout>

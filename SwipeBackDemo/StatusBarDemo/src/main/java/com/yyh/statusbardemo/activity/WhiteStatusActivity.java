@@ -45,13 +45,12 @@ public class WhiteStatusActivity extends BaseActivity implements View.OnClickLis
         int viewId = v.getId();
         if (viewId == R.id.btn_white_status_bar) {
             if (!mHasSet) {
-                findViewById(R.id.btn_white_status_bar).setOnClickListener(this);
                 UIAction.setBackgroundResourceSafety(findViewById(R.id.title_bar_view), R.color.white);
                 ((TextView) findViewById(R.id.title_text)).setTextColor(getResources().getColor(R.color.black));
                 UIAction.setTitleBarLeftImgBtn(getWindow().getDecorView(), R.mipmap.back_black, this);
+
                 mImmersionBar.statusBarDarkFont(true, 0.5f).init();
             } else {
-                findViewById(R.id.btn_white_status_bar).setOnClickListener(this);
                 UIAction.setBackgroundResourceSafety(findViewById(R.id.title_bar_view), R.color.red);
                 ((TextView) findViewById(R.id.title_text)).setTextColor(getResources().getColor(R.color.white));
                 UIAction.setTitleBarLeftImgBtn(getWindow().getDecorView(), R.mipmap.back_white, this);

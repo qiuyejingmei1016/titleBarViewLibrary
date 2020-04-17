@@ -2,7 +2,6 @@ package com.example.demo.activity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import com.example.demo.BaseActivity;
 import com.example.demo.R;
@@ -14,7 +13,7 @@ import com.example.demo.UIAction;
  * @createTime: 2019/4/16 17:09
  * @className: HandleCommonLoadTitleActivity
  */
-public class HandleCommonLoadTitleActivity extends BaseActivity implements View.OnClickListener {
+public class FullActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,25 +25,25 @@ public class HandleCommonLoadTitleActivity extends BaseActivity implements View.
         UIAction.setTitle(this, "主页");
         UIAction.setTitleBarLeftImgBtn(getWindow().getDecorView(), R.mipmap.ico_back_white, this);
         UIAction.setTitleBarRightImgBtn(getWindow().getDecorView(), R.mipmap.ico_set_white, this);
-
-        TextView textView = (TextView) findViewById(R.id.tip);
-        textView.setText("普通title_view 显示问题解决");
     }
 
     @Override
     protected int setLayoutId() {
-        return R.layout.activity_main2;
+        return R.layout.activity_full;
     }
 
     @Override
     protected void initImmersionBar() {
         super.initImmersionBar();
-        //自定义的titleBar是父布局是LinearLayout
-//        mImmersionBar.titleBar(R.id.title_bar_view).init();
-
-        //自定义的titleBar是父布局是RelativeLayout适配沉浸方式
-        mImmersionBar.fitsSystemWindows(true) //使用该属性必须指定状态栏的颜色，不然状态栏透明，很难看
-                .statusBarColor(R.color.title_bar_red_color)
+        //自定义titlBar的父布局最好是LinearLayout、android.support.v7.widget.Toolbar;当时是RelativeLayout时会有问题,titleBar展示错乱；
+        View titleBarView = findViewById(R.id.title_bar_view);
+        UIAction.setBackgroundResourceSafety(titleBarView, R.color.trans);
+        //以下两种方式相同都可以
+//        mImmersionBar.titleBar(titleBarView, true)
+//                .transparentBar().keyboardEnable(true)
+//                .init();
+        mImmersionBar.titleBar(R.id.title_bar_view, false)
+                .transparentBar().keyboardEnable(true)
                 .init();
     }
 

@@ -26,6 +26,8 @@
         </activity>
         <activity android:name=".activity.CommonTitleIncludeActivity">
         </activity>
+        <activity android:name=".activity.FullActivity">
+        </activity>
     </application>
 
 </manifest>

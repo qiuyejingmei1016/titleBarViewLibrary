@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/title_bar"
-    android:layout_width="match_parent"
-    android:layout_height="45dp"
-    android:background="#ec1d06"
-    app:contentInsetStart="0dp">
-    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/title_bar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="45dp"
+        android:background="#ec1d06"
+        app:contentInsetStart="0dp">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <TextView
-            android:id="@+id/title_text"
-            style="@style/title_bar_title_text"/>
+                android:id="@+id/title_text"
+                style="@style/title_bar_title_text"/>
         <ImageButton
-            android:id="@+id/title_left_img_btn"
-            style="@style/title_bar_left_img_btn"
-            android:visibility="invisible"/>
+                android:id="@+id/title_left_img_btn"
+                style="@style/title_bar_left_img_btn"
+                android:visibility="invisible"/>
         <ImageButton
-            android:id="@+id/title_right_img_btn"
-            style="@style/title_bar_right_img_btn"
-            android:visibility="invisible"/>
+                android:id="@+id/title_right_img_btn"
+                style="@style/title_bar_right_img_btn"
+                android:visibility="invisible"/>
     </RelativeLayout>
 
 </android.support.v7.widget.Toolbar>

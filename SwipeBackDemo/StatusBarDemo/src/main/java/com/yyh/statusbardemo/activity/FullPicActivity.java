@@ -34,7 +34,6 @@ public class FullPicActivity extends BaseActivity implements View.OnClickListene
         mSeekBar = (SeekBar) findViewById(R.id.seek_bar);
         textView = (TextView) findViewById(R.id.text_view);
         mSeekBar.setOnSeekBarChangeListener(this);
-        UIAction.setBackgroundResourceSafety(mTitleBarView, R.color.tans);
     }
 
     @Override
@@ -46,8 +45,9 @@ public class FullPicActivity extends BaseActivity implements View.OnClickListene
     protected void initImmersionBar() {
         super.initImmersionBar();
         mTitleBarView = findViewById(R.id.title_bar_view);
+        UIAction.setBackgroundResourceSafety(mTitleBarView, R.color.tans);
         mImmersionBar.titleBar(mTitleBarView, false)
-                .transparentBar()
+                .transparentBar().keyboardEnable(true)
                 .init();
 //        mImmersionBar.statusBarView(mTitleBarView)
 //                .navigationBarColor(R.color.tab_bottom_normal)

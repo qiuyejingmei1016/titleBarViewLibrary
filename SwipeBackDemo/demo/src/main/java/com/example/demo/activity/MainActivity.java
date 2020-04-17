@@ -33,6 +33,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         findViewById(R.id.bt4).setOnClickListener(this);
         findViewById(R.id.bt5).setOnClickListener(this);
         findViewById(R.id.bt6).setOnClickListener(this);
+        findViewById(R.id.bt7).setOnClickListener(this);
     }
 
     @Override
@@ -66,6 +67,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             startActivity(intent);
         }else if (viewId == R.id.bt6){//解决白色状态栏问题
             Intent intent = new Intent(this, HandleWhiteStatusBarActivity.class);
+            startActivity(intent);
+        }else if (viewId == R.id.bt7){//全屏图片
+            Intent intent = new Intent(this, FullActivity.class);
             startActivity(intent);
         }
     }

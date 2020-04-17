@@ -102,5 +102,14 @@
                 android:text="解决白色状态栏问题"
                 android:textAllCaps="false"
                 android:textSize="20sp"/>
+        <Button
+                android:id="@+id/bt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="全屏展示"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
     </LinearLayout>
 </RelativeLayout>

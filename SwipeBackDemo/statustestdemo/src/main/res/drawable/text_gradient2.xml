@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <solid android:color="#b4000000"/>
+    <!--设置边框大小及颜色-->
+    <stroke
+            android:width="2dp"
+            android:color="#B4317767"/>
+    <!--设置渐变 angle可用于设置渐变角度-->
+    <gradient
+            android:angle="180"
+            android:endColor="#ff1aecff"
+            android:startColor="#ff007eff"/>
+
+    <padding
+            android:bottom="5dp"
+            android:left="5dp"
+            android:right="5dp"
+            android:top="5dp"/>
+    <!--设置圆角大小-->
+    <corners android:radius="10dp">
+    </corners>
+</shape>

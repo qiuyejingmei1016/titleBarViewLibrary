@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/main_page_bg"/>
+
+            <ImageView
+                    android:layout_width="290dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="120dp"
+                    android:src="@mipmap/main_logo"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="200dp"
+                    android:src="@mipmap/main_title_line"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="180dp"
+                    android:gravity="center"
+                    android:text="AnyChat"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="280dp"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:id="@+id/ll_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/main_item_icon"
+                        android:layout_marginLeft="@dimen/main_margin"
+                        android:layout_marginRight="@dimen/main_margin"
+                        android:background="@drawable/shape_corner"
+                        android:orientation="horizontal">
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:id="@+id/ll_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/main_item_icon"
+                        android:layout_marginLeft="@dimen/main_margin"
+                        android:layout_marginTop="@dimen/main_margin"
+                        android:layout_marginRight="@dimen/main_margin"
+                        android:background="@drawable/shape_corner"
+                        android:orientation="horizontal">
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/ll_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/main_item_icon"
+                        android:layout_marginLeft="@dimen/main_margin"
+                        android:layout_marginTop="@dimen/main_margin"
+                        android:layout_marginRight="@dimen/main_margin"
+                        android:background="@drawable/shape_corner"
+                        android:orientation="horizontal">
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/ll_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/main_item_icon"
+                        android:layout_marginLeft="@dimen/main_margin"
+                        android:layout_marginTop="@dimen/main_margin"
+                        android:layout_marginRight="@dimen/main_margin"
+                        android:background="@drawable/shape_corner"
+                        android:orientation="horizontal">
+                </RelativeLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</RelativeLayout>

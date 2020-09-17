@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="white">#ffffff</color>
+    <color name="trans_white">#20ffffff</color>
+    <color name="trans">#00000000</color>
+    <color name="blue">#cc33b5e5</color>
+    <color name="blue_of">#0CA9FF</color>
+    <color name="txt_general_bg">#333333</color>
+    <color name="dancen">#CCCC33</color>
+    <color name="light_grey">#CDC9C9</color>
+    <color name="darker_grey">#666666</color>
+    <color name="login_grey_line">#D6D6D6</color>
+    <color name="text_color">#999999</color>
+    <drawable name="main_head">#6699CC</drawable>
+    <color name="text_cancel_color">#ED413F</color>
+    <color name="cilcle_color">#FF9CA2A9</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="back_color">#000000</color>
+    <color name="back_color1">#2f2f2f</color>
+    <color name="back_color2">#2f3f3f</color>
+    <color name="back_color3">#757575</color>
+    <color name="first_text_color">#333333</color>
+    <color name="second_text_color">#aaaaaa</color>
+    <color name="third_text_color">#555555</color>
+    <color name="light_color">#e1e1e1</color>
+    <color name="back_hint_color">#DCDCDC</color>
+
+</resources>
